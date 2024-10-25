@@ -1,0 +1,10 @@
+.main_window {
+    display: grid;
+}
+
+.contents_window {
+    display: grid;
+    grid-template-columns: 100px  100px;
+    
+}
+
