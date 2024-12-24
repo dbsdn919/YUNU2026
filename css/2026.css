@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+}
+
+#text_hover:hover {
+    text-decoration: underline;
+}
+
+#text_hover_color:hover {
+    text-decoration: underline;
+    background-color: greenyellow;
+}
+
+.YUNU2026 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 37px;
+}
+
+.YUNU2026_title {
+    margin-left: 17%;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.YUNU2026_date {
+    text-align: end;
+    margin-right: 23%;
+    margin-bottom: 7vh;
+}
+.YUNU2026_date a {
+    cursor: help;
+}
+
+.YUNU2026_viewimgs {
+    margin-left: 34%;
+    margin-bottom: 5vh;
+}
+
+.YUNU2026_info {
+    margin-left: 13%;
+    margin-bottom: 3vh;
+}
+/**
+.info_back {
+    text-align: end;
+    margin-right: 20%;
+    margin-top: 30%;
+}
+.info_back a {
+    padding: 0 2px 0 2px;
+}
+.info_back:hover {
+    text-decoration: underline;
+}
+.info_back a:hover {
+    background-color: rgb(223, 235, 57);
+}
+
+.info_mail {
+    margin-left: 35%;
+    margin-top: 13%;
+}
+.info_mail:hover {
+    text-decoration: underline;
+}
+
+.info_phone {
+    text-align: end;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+.info_phone:hover {
+    text-decoration: underline;
+}
+
+.info_social {
+    margin-left: 24%;
+    margin-bottom: 5%;
+}
+.info_social:hover {
+    text-decoration: underline;
+}
+**/
+
+.info_back {
+    text-align: end;
+    margin-right: 20%;
+    margin-top: 14vh;
+}
+.info_back a {
+    padding: 0 2px 0 2px;
+}
+
+.info_mail {
+    margin-left: 35%;
+    margin-top: 5vh;
+}
+
+.info_phone {
+    text-align: end;
+    margin-right: 20%;
+    margin-top: 6vh;
+}
+
+.info_social {
+    margin-left: 24%;
+    margin-bottom: 5vh;
+}
+.info_social a {
+    cursor: alias;
+}

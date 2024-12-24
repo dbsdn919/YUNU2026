@@ -1,42 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUNU</title>
 
-    <!--Link CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
 
-    <!--Google Fonts-->
+    <!--JavaScript-->
+    <script src="js/main.js" defer></script>
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!--YUNU2026-->
+    <meta http-equiv='refresh' content='0;url=http://127.0.0.1:5500/YUNU2026.html'>
+
 </head>
-<body>
-    <!--
-    <div class="title"><h1><a href="index.html">김윤우</a></h1></div>
-    -->
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="src/FAVICON/favicon.ico">
 
-    <div class="main_window">
-        <div class="about">
-            <div class="discription">
-                <h2><a>비주얼의 해체와 재조합의 과정을 통해 새로운 이미지를 만들어 나간다.</a></h2>
-            </div>
-            <div class="contact">
-                <div><a href="tel:+82 10-2439-3919">+82 10-2439-3919</a></div>
-                <div><a href="mailto:"info@kimyunu.com"">info@kimyunu.com</a></div>
-                <div><a href="https://instagram.com/kim.yunu">instagram</a></div>
-            </div>
-        </div>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/FAVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="src/FAVICON/site.webmanifest">
+    <link rel="mask-icon" href="src/FAVICON/safari-pinned-tab.svg" color="#c49a6c">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 
+<body id="index">
+    
+    <div class="title">
+        <span><a href="index.html">KIM&nbsp;YUNU<!--<img src="src/FAVICON/KIMYUNU2024_FAVICON.svg" class="FAVICON">--></a></span>
+    </div>
+
+    <div class="info">
+        <a href="mailto:info@kimyunu.com" class="mail"></a>
+        <br> <a class="info_divider">·</a>
+        <a href="https://www.instagram.com/kim.yunu/" target="_blank" class="instagram"></a>
+        <br>
+        <a class="info_underbar" class="pointer">_</a> <br>
+        <a class="location"></a>
+    </div>
+
+    <div class="watermark">
+        <span><a id="clock"></a></span>
+    </div>
+
+    <div class="background">
         <div class="contents">
-            <div class="contents_window">
-                <div class="contents_title"><a href="">SON YEJIN</a></div>
-                <div class="contents_num">2024</div>
-            </div>
+            <div class="contents_date"><a>2024 FEB</a></div>
+            <div class="contents_title"><a href="SONYEJIN.html">SON YEJIN</a></div>
+            <div class="contents_thumbnail"><a href="SONYEJIN.html"><img src="src/SONYEJIN/SONYEJIN_05_S.jpg" oncontextmenu="return false"></a></div>
         </div>
+        <div class="contents">
+            <div class="contents_date"><a>2024 JAN</a></div>
+            <div class="contents_title"><a href="BAEKJA.html">BAEKJA</a></div>
+            <div class="contents_thumbnail"><a href="BAEKJA.html"><img src="src/baekja/CLR_baekja_01_S.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        <div class="contents">
+            <div class="contents_date"><a>2023 SEP</a></div>
+            <div class="contents_title"><a href="ANTIHERO.html">ANTIHERO</a></div>
+            <div class="contents_thumbnail"><a href="ANTIHERO.html"><img src="src/ANTIHERO/ANTIHERO_01.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        <div class="contents">
+            <div class="contents_date"><a>2023 SEP</a></div>
+            <div class="contents_title"><a href="VISUALX.html" class="KR">시각&nbsp;실험</a></div>
+            <div class="contents_thumbnail"><a href="VISUALX.html"><img src="src/VISUALX/VISUALX_4.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        <div class="contents">
+            <div class="contents_date"><a>2023 SEP</a></div>
+            <div class="contents_title"><a href="sculpture.html">SCULPTURE</a></div>
+            <div class="contents_thumbnail"><a href="sculpture.html"><img src="src/sculpture/sculpture_04.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        <div class="contents">
+            <div class="contents_date"><a>2023 MAY</a></div>
+            <div class="contents_title"><a href="FINDMY.html">FIND MY</a></div>
+            <div class="contents_thumbnail"><a href="FINDMY.html"><img src="src/FIND MY/FINDMY_05_S.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        <!--
+        <div class="contents">
+            <div class="contents_date"><a>2023 JUL</a></div>
+            <div class="contents_title"><a href="BYREDO.html">BYREDO</a></div>
+            <div class="contents_thumbnail"><a href="BYREDO.html"><img src="src/BYREDO/BYREDO_01.jpg" oncontextmenu="return false"></a></div>
+        </div>
+        -->
+        
     </div>
 </body>
 </html>

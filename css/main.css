@@ -1,4 +1,14 @@
-/*Nanum-Myeongjo Font*/
+.fragment-mono-regular {
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fragment-mono-regular-italic {
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
 
 .nanum-myeongjo-regular {
     font-family: "Nanum Myeongjo", serif;
@@ -18,30 +28,259 @@
     font-style: normal;
 }
 
+:root {
+    --background-color: white;
+    --text-color: black;
+    --nonselect-color: gray;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
 body {
     margin: 0;
+    width: 100vw;
+    height: fit-content;
+}
+#index {
+    display: none;
 }
 
 a {
+    font-family: "Fragment Mono", monospace;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12pt;
+    word-spacing: -2.5px;
+    word-break: keep-all;
+}
+del {
+    color: var(--nonselect-color);
+}
+.KR {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
-    font-style: normal;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 0 0 0 23px;
+}
+
+.title {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    transform: translateY(1px);
+    width: fit-content;
+    z-index: 999;
+}
+.title a {
     font-size: 12pt;
-
-    text-decoration: none;
-    color: black;
-    transform : rotate(0.04deg);
+}
+.title img {
+    height: 19px;
+    transform: translateY(3.5px);
+    margin: 0 0 0 2px;
 }
 
-h1 {
-    margin: 0;
-    display: inline;
-    line-height: 0;
+.info {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    height: fit-content;
+    z-index: 999;
 }
 
-h2 {
-    margin: 0;
-    display: inline;
-    line-height: 0;
+.info a {
+    letter-spacing: -0.5px;
+    text-shadow: 0 0 10px white;
+}
+.info_divider {
+    display: none;
+    position: relative;
+    bottom: 1px;
 }
 
+.mail::after {
+    content: "Mail";
+}
+.mail:hover::after {
+    content: "> Mail";
+}
+
+.instagram::after {
+    content: "Instagram";
+}
+.instagram:hover::after {
+    content: "> Instagram";
+}
+
+.location::after {
+    content: "Located in Korea.";
+}
+.location:hover::after {
+    content: "Seoul,Deagu";
+}
+
+.watermark {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: default;
+}
+
+.watermark a {
+    font-size: 9pt;
+    color: var(--nonselect-color);
+    word-spacing: -2px;
+}
+
+.background {
+    display: grid;
+    width: calc(100vw - 140px);
+    height: fit-content;
+    margin: 70px 70px 100px 70px;
+    grid-template-columns: repeat(auto-fill, 250px);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.contents {
+    display: grid;
+    width: fit-content;
+    max-width: 250px;
+    height: fit-content;
+}
+.contents_date a {
+    color: var(--nonselect-color);
+    cursor: default;
+}
+.contents_title {
+    padding: 0 0 3px 0;
+}
+.contents_thumbnail {
+    width: fit-content;
+    max-width: 250px;
+    height: 250px;
+}
+.contents_thumbnail a {
+    width: 250px;
+    height: fit-content;
+}
+.contents_thumbnail img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    object-position: top;
+    object-position: left;
+}
+
+.pointer {
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        left: 0;
+        top: -1px;
+        padding: 10px 0 10px 10px;
+        width: 100vw;
+        background-color: var(--background-color);
+    }
+
+    .info {
+        top: 10px;
+        left: auto;
+        right: 12px;
+        transform: translateY(-0.6px);
+    }
+    .info a {
+        font-size: 9pt;
+        
+    }
+    .info br {
+        display: none;
+    }
+    .info_divider {
+        display: inline;
+    }
+    .info_underbar {
+        display: none;
+    }
+    .location {
+        display: none;
+    }
+
+    .mail::after {
+        content: "MAIL";
+    }
+    .mail:hover::after {
+        content: "> MAIL";
+    }
+    
+    .instagram::after {
+        content: "IG";
+    }
+    .instagram:hover::after {
+        content: "> IG";
+    }
+    
+    .background {
+        display: grid;
+        width: calc(100vw - 40px);
+        height: fit-content;
+        margin: 50px 20px 50px 20px;
+        grid-template-columns: repeat(auto-fill, calc(100vw - 40px));
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+    
+    .contents {
+        display: grid;
+        width: 100%;
+        max-width: none;
+        height: fit-content;
+    }
+    .contents_date a {
+        color: var(--nonselect-color);
+    }
+    .contents_title {
+        padding: 0 0 3px 0;
+    }
+    .contents_thumbnail {
+        width: fit-content;
+        max-width: none;
+        height: fit-content;
+    }
+    .contents_thumbnail a {
+        width: 100%;
+        height: fit-content;
+    }
+    .contents_thumbnail img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        max-height: none;
+        object-fit: contain;
+        object-position: top;
+        object-position: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .watermark {
+        /*display: none;*/
+    }
+}

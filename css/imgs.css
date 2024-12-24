@@ -1,0 +1,33 @@
+.viewimgs {
+    display: grid;
+}
+
+.imgsbox {
+    display: grid;
+}
+
+.inline_title {
+    width: 100vw;
+}
+
+.inline_rail {
+    height: 100px;
+    width: ;
+    overflow: auto;
+    white-space: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap: 2px;
+}
+.inline_rail::-webkit-scrollbar{
+    display: none;
+}
+.inline_img {
+    height: 100px;
+    width: fit-content;
+}
+.inline_img img {
+    height: 100px;
+}

@@ -1,0 +1,223 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --nonselect-color: gray;
+    --1st-point-color: magenta;
+    --2nd-point-color: #1ed760;
+}
+
+.contents_window {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+    min-height: 99vh;
+    height: fit-content;
+}
+
+.contents_window_img {
+    width: 50vw;
+    height: fit-content;
+    padding: 40px 0 40px 0;
+    -webkit-touch-callout: none;
+}
+.contents_window_img img {
+    margin: 0 2.5% 50px 5%;
+    width: 92.5%;
+    height: auto;
+}
+
+.contents_window_text {
+    display: grid;
+    grid-template-rows: 19px 19px auto;
+    width: calc(50% - 3.75%);
+    height: fit-content;
+    position: fixed;
+    left: 50vw;
+    top: 40px;
+    margin: 0 2.5% 0 1.25%;
+}
+.contents_window_date a {
+    color: var(--nonselect-color);
+}
+.contents_window_caption {
+    margin: 5px 0 0 0;
+    padding: 5px 0 0 0;
+    border-top: 1px solid black;
+    line-height: 22px;
+}
+
+.extnl_link {
+    display: block;
+}
+.music_link {
+    text-decoration: underline;
+    color: var(--2nd-point-color);
+    font-style: italic;
+}
+.web_link {
+    text-decoration: underline;
+    color: var(--1st-point-color);
+    font-style: italic;
+}
+
+.spotify_player {
+    position: fixed;
+    width: 46.5%;
+    bottom: 35px;
+}
+
+.PREV_NEXT {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-shadow: 0 0 10px white;
+    z-index: 999;
+}
+
+.SONYEJIN_NEXT::after {
+    content: "NEXT";
+}
+.SONYEJIN_NEXT:hover::after {
+    content: "BAEKJA";
+}
+
+.BAEKJA_PREV::after {
+    content: "PREV";
+}
+.BAEKJA_PREV:hover::after {
+    content: "SON YEJIN";
+}
+.BAEKJA_NEXT::after {
+    content: "NEXT";
+}
+.BAEKJA_NEXT:hover::after {
+    content: "ANTIHERO";
+}
+
+.ANTIHERO_PREV::after {
+    content: "PREV";
+}
+.ANTIHERO_PREV:hover::after {
+    content: "BAEKJA";
+}
+.ANTIHERO_NEXT::after {
+    content: "NEXT";
+}
+.ANTIHERO_NEXT:hover::after {
+    content: "시각 실험";
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+.시각실험_PREV::after {
+    content: "PREV";
+}
+.시각실험_PREV:hover::after {
+    content: "ANTIHERO";
+}
+.시각실험_NEXT::after {
+    content: "NEXT";
+}
+.시각실험_NEXT:hover::after {
+    content: "SCULPTURE";
+}
+
+.SCULPTURE_PREV::after {
+    content: "PREV";
+}
+.SCULPTURE_PREV:hover::after {
+    content: "시각 실험";
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+.SCULPTURE_NEXT::after {
+    content: "NEXT";
+}
+.SCULPTURE_NEXT:hover::after {
+    content: "FIND MY";
+}
+
+.FINDMY_PREV::after {
+    content: "PREV";
+}
+.FINDMY_PREV:hover::after {
+    content: "SCULPTURE";
+}
+.FINDMY_NEXT::after {
+    content: "NEXT";
+}
+.FINDMY_NEXT:hover::after {
+    content: "BYREDO";
+}
+
+.BYREDO_PREV::after {
+    content: "PREV";
+}
+.BYREDO_PREV:hover::after {
+    content: "FIND MY";
+}
+
+
+
+@media (max-width: 768px) {
+    .contents_window {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        width: 100vw;
+        min-height: 99vh;
+        height: fit-content;
+    }
+    .contents_window_img:nth-child(1) { order: 2; }
+    .contents_window_text:nth-child(2) { order: 1; }
+
+    .contents_window_img {
+        width: 100vw;
+        height: fit-content;
+        padding: 40px 0 10px 0;
+    }
+    .contents_window_img img {
+        margin: 0 5% 50px 5%;
+        width: 90%;
+        height: auto;
+    }
+    
+    .contents_window_text {
+        display: grid;
+        grid-template-rows: 19px 19px max-content;
+        width: 90vw;
+        height: auto;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 50px 5vw 0 5vw;
+    }
+    .contents_window_date a {
+        color: var(--nonselect-color);
+    }
+    .contents_window_caption {
+        margin: 5px 0 0 0;
+        padding: 5px 0 0 0;
+        border-top: 1px solid black;
+        line-height: 22px;
+    }
+
+    .spotify_player {
+        position: static;
+        width: auto;
+        bottom: auto;
+        margin: 20px 0 0 0;
+    }
+
+    .PREV_NEXT {
+        position: fixed;
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+        height: fit-content;
+    }
+}
